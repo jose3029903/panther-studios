@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="./imagenes/panther-logo.png">
     
-    <meta name="description" content="Panther Studios: desarrollo de páginas web, aplicaciones y sistemas digitales modernos para negocios y emprendedores.">
+<meta name="description" content="Panther Studios: desarrollo de páginas web, aplicaciones y sistemas digitales modernos para negocios y emprendedores.">
 
 <meta name="keywords" content="Panther Studios, desarrollo web, aplicaciones, software, páginas web">
 
@@ -19,10 +19,11 @@
 <meta property="og:title" content="Panther Studios | Desarrollo Digital">
 
 <meta property="og:description" content="Creamos soluciones digitales modernas para impulsar tus ideas y negocios.">
-    
+
 <meta property="og:image" content="https://jose3029903.github.io/panther-studios/imagenes/panther-logo.png">
 
 <meta property="og:type" content="website">
+
 </head>
 <body>
 
@@ -248,10 +249,12 @@
                 <span>Comunidad</span>
             </div>
 
-            <div class="project-status">EN DESARROLLO</div>
+        <div class="project-status">EN DESARROLLO</div>
         </article>
 
         <!-- PANTHER CORD -->
+        <article class="project-card">
+                  <!-- PANTHER CORD -->
         <article class="project-card">
             <span>03 / COMUNICACIÓN</span>
 
@@ -273,6 +276,66 @@
         </article>
 
     </div>
+</section>
+
+<section id="precios" class="pricing-section">
+    <div class="section-header">
+        <h2>Planes y precios</h2>
+        <p>Soluciones digitales para impulsar tu negocio.</p>
+    </div>
+
+    <div class="pricing-container">
+
+        <!-- STARTER -->
+        <div class="pricing-card">
+            <h3>Starter</h3>
+            <h2>$15</h2>
+            <p>Ideal para comenzar.</p>
+            <ul>
+                <li>Página web básica</li>
+                <li>Diseño adaptable</li>
+                <li>Información del negocio</li>
+                <li>Botón de WhatsApp</li>
+            </ul>
+            <a href="#contacto" class="pricing-button">Elegir plan</a>
+        </div>
+
+        <!-- PROFESSIONAL -->
+        <div class="pricing-card featured">
+            <span class="pricing-tag">RECOMENDADO</span>
+            <h3>Professional</h3>
+            <h2>$30</h2>
+            <p>Para negocios en crecimiento.</p>
+            <ul>
+                <li>Todo lo del Starter</li>
+                <li>Hasta 5 secciones</li>
+                <li>Galería de imágenes</li>
+                <li>Formulario de contacto</li>
+                <li>Diseño personalizado</li>
+            </ul>
+            <a href="#contacto" class="pricing-button">Elegir plan</a>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="pricing-card">
+            <h3>Premium</h3>
+            <h2>$80+</h2>
+            <p>Para proyectos avanzados.</p>
+            <ul>
+                <li>Todo lo del Professional</li>
+                <li>Funciones personalizadas</li>
+                <li>Sistemas avanzados</li>
+                <li>Integraciones adicionales</li>
+            </ul>
+            <a href="#contacto" class="pricing-button">Elegir plan</a>
+        </div>
+
+    </div>
+
+    <p class="pricing-note">
+        Precios iniciales orientativos. Los proyectos se cotizan
+        según sus características y necesidades.
+    </p>
 </section>
 
 <section class="faq" id="faq">
@@ -321,19 +384,25 @@
 
     <form class="contact-form" id="contactForm">
 
+    <input type="hidden" name="access_key" value="8c9889c4-9f24-4975-a7f6-cfc6265293cf">
+
+    <input type="hidden" name="subject" value="Nueva solicitud - Panther Studios">
+
+    <input type="hidden" name="from_name" value="Panther Studios">
+
         <div class="form-group">
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" placeholder="Tu nombre" required>
+            <input type="text" id="nombre" name="name" placeholder="Tu nombre" required>
         </div>
 
         <div class="form-group">
             <label for="correo">Correo electrónico</label>
-            <input type="email" id="correo" placeholder="tucorreo@ejemplo.com" required>
+            <input type="email" id="correo" name="email" placeholder="tucorreo@ejemplo.com" required>
         </div>
 
         <div class="form-group">
             <label for="servicio">¿Qué servicio necesitas?</label>
-            <select id="servicio" required>
+            <select id="servicio" name="service" required>
                 <option value="">Selecciona un servicio</option>
                 <option>Desarrollo Web</option>
                 <option>Aplicaciones</option>
@@ -345,8 +414,8 @@
 
         <div class="form-group">
             <label for="mensaje">Cuéntanos sobre tu proyecto</label>
-            <textarea id="mensaje" rows="5"
-                placeholder="Describe tu idea..." required></textarea>
+            <textarea id="mensaje" name="message" rows="5"
+                 placeholder="Describe tu idea..." required></textarea>
         </div>
 
         <button type="submit" class="primary-button">
@@ -404,6 +473,17 @@
     </div>
 
 </footer>
+
+<a
+    href="https://wa.me/5930982607489?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+>
+    <span>WhatsApp</span>
+    <strong>✆</strong>
+</a>
 
 <script src="script.js"></script>
 
