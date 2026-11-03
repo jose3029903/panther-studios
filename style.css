@@ -833,3 +833,170 @@ footer span {
     object-fit: contain;
     border-radius: 20px;
 }
+
+
+/* PLANES Y PRECIOS */
+
+.pricing-section {
+    padding: 90px 8%;
+    background: #101014;
+    text-align: center;
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 45px auto 0;
+}
+
+.pricing-card {
+    flex: 1;
+    min-width: 0;
+}
+
+.pricing-card {
+    position: relative;
+    background: #19191f;
+    border: 1px solid #33313d;
+    border-radius: 18px;
+    padding: 35px 25px;
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    border-color: #9b5cff;
+    box-shadow: 0 12px 35px #8b42ff22;
+}
+
+.pricing-card h3 {
+    font-size: 23px;
+    color: #ffffff;
+}
+
+.pricing-card h2 {
+    font-size: 42px;
+    color: #a66bff;
+    margin: 20px 0 10px;
+}
+
+.pricing-card p {
+    color: #aaa;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.pricing-card li {
+    color: #ddd;
+    margin: 14px 0;
+}
+
+.pricing-card li::before {
+    content: "✓";
+    color: #a66bff;
+    margin-right: 10px;
+}
+
+.pricing-button {
+    display: block;
+    text-align: center;
+    padding: 13px;
+    background: #8b42ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pricing-button:hover {
+    background: #a66bff;
+}
+
+.pricing-card.featured {
+    border: 2px solid #9b5cff;
+    transform: scale(1.03);
+}
+
+.pricing-tag {
+    display: inline-block;
+    background: #8b42ff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.pricing-note {
+    color: #999;
+    font-size: 13px;
+    margin-top: 35px;
+}
+
+@media (max-width: 850px) {
+    .pricing-container {
+        flex-direction: column;
+        max-width: 450px;
+    }
+    .pricing-container {
+    grid-template-columns: 1fr;
+}
+
+    .pricing-card.featured {
+        transform: none;
+    }
+}
+/* BOTÓN FLOTANTE DE WHATSAPP */
+
+.whatsapp-float {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 20px;
+    background: #7b07e7;
+    color: white;
+
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+
+    box-shadow: 0 5px 20px rgba(3, 39, 243, 0.3);
+    transition: 0.3s ease;
+}
+
+.whatsapp-float strong {
+    font-size: 24px;
+}
+
+.whatsapp-float:hover {
+    background: #650ec9;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(76, 6, 240, 0.45);
+}
+
+@media (max-width: 480px) {
+    .whatsapp-float {
+        right: 15px;
+        bottom: 15px;
+        padding: 10px 15px;
+    }
+}
